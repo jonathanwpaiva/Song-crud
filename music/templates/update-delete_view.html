@@ -1,0 +1,20 @@
+<div class="main"> 
+  
+    {% for data in dataset %}. 
+  
+    Nome: {{ data.title }} <br/> 
+    Duração: {{ data.duration }} segundos<br/> 
+    Publicada no spotify: {{ data.spotify_published }}<br/> 
+    Publicada no youtube: {{ data.youtube_published }}<br/> 
+    Nome do artista: {{ data.artist }}<br/> 
+    <form method="get" action="{{data.id}}/update">
+        <button type = "submit", name = "save">Atualizar</button>
+    </form>
+    <form method="get" action="{{data.id}}/delete">
+        <button type = "submit", name = "save">Remover</button>
+    </form>
+    <hr/> 
+  
+    {% endfor %} 
+  
+</div> 

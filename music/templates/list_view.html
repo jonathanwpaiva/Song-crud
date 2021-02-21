@@ -1,0 +1,15 @@
+<div class="main"> 
+  
+    {% for data in dataset %}. 
+  
+    Nome: {{ data.title }} <br/> 
+    Duração: {{ data.duration }} segundos<br/> 
+    Publicada no spotifyi: {{ data.spotify_published }}<br/> 
+    Publicada no youtube: {{ data.youtube_published }}<br/> 
+    Nome do artista: {{ data.artist }}<br/> 
+    
+    <hr/> 
+  
+    {% endfor %} 
+  
+</div> 

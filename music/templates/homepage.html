@@ -1,0 +1,23 @@
+{% extends 'base.html'%}
+
+{% block title %}Oni Music{% endblock %}
+
+{% block content %} 
+
+<h1>Oni Music</h1>    
+<h2>Gerenciamento de músicas Oni Music</h2>
+<form method="get" action="adicionar">
+    <button type = "submit", name = "save">Adicionar música</button>
+</form>
+
+<form method="get" action="listar">
+    <button type = "submit", name = "save">Listar músicas</button>
+</form>
+
+<form method="get" action="update-delete">
+    <button type = "submit", name = "save">Atualizar ou remover músicas</button>
+</form>
+    
+   
+   
+{% endblock %}
